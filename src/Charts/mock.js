@@ -274,7 +274,7 @@ export const mockData = [
 
 export const RechartMock = [
   {
-    name: '17/09/2022,',
+    name: '17/09/2022',
     Other: 250,
     Refferences: 3647,
     Direct: 109,
@@ -290,7 +290,7 @@ export const RechartMock = [
     Organic: 2991,
   },
   {
-    name: '19/09/2022,',
+    name: '19/09/2022',
     Other: 44,
     Refferences: 2663,
     Direct: 1361,
@@ -298,7 +298,7 @@ export const RechartMock = [
     Organic: 2809,
   },
   {
-    name: '20/09/2022,',
+    name: '20/09/2022',
     Other: 48,
     Refferences: 505,
     Direct: 574,
@@ -306,7 +306,7 @@ export const RechartMock = [
     Organic: 558,
   },
   {
-    name: '21/09/2022,',
+    name: '21/09/2022',
     Other: 36,
     Refferences: 1424,
     Direct: 1009,
