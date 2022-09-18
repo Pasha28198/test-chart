@@ -2,19 +2,21 @@ import { ResponsiveLine } from '@nivo/line';
 import { mockData } from './mock';
 import { Container } from './styles';
 
-export const Chart = () => {
+export const NivoChart = () => {
   return (
     <Container>
       <ResponsiveLine
         data={mockData}
         margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-        xScale={{ type: "point" }}
+        xScale={{ type: 'point' }}
+      
         yScale={{
           type: 'linear',
           min: 'auto',
-          max: 'auto',
-          stacked: true,
+          max: '6000',
+          stacked: false,
           reverse: false,
+          
         }}
         yFormat=" >-.2f"
         axisTop={null}
@@ -24,7 +26,6 @@ export const Chart = () => {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: 'transportation',
           legendOffset: 36,
           legendPosition: 'middle',
         }}
@@ -33,12 +34,10 @@ export const Chart = () => {
           tickSize: 5,
           tickPadding: 5,
           tickRotation: 0,
-          legend: 'count',
           legendOffset: -40,
           legendPosition: 'middle',
         }}
         pointSize={10}
-        pointColor={{ theme: 'background' }}
         pointBorderWidth={2}
         pointBorderColor={{ from: 'serieColor' }}
         pointLabelYOffset={-12}

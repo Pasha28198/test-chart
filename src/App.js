@@ -1,11 +1,14 @@
 import './App.css';
 
-import { Chart } from './Chart/Chart';
+import { NivoChart } from './Charts/NivoChart';
+
+import { RechartExample } from './Charts/Rechart';
 
 function App() {
   return (
     <div className="App">
-      <Chart />
+      <NivoChart />
+      <RechartExample/>
     </div>
   );
 }
