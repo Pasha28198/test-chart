@@ -272,7 +272,7 @@ export const mockData = [
   },
 ];
 
-export const RechartMock = [
+export const RechartLineMock = [
   {
     name: '17/09/2022',
     Other: 250,
@@ -592,6 +592,49 @@ export const RechartMock = [
     Direct: 735,
     Social: 1097,
     Organic: 3755,
+  },
+];
+
+export const RechartAreaMock = [
+  {
+    day: '01/01/2022',
+    unitedStates: [0, 1100],
+    brazil: [1100, 1300],
+    japan: [1300, 2900],
+    unknown: [2900, 2950],
+    china: [2950, 3400],
+  },
+  {
+    day: '01/02/2022',
+    unitedStates: [0, 2000],
+    brazil: [2000, 2100],
+    japan: [2100, 2200],
+    unknown: [2200, 2500],
+    china: [2500, 3100],
+  },
+  {
+    day: '01/03/2022',
+    unitedStates: [0, 900],
+    brazil: [900, 1200],
+    japan: [1220, 1500],
+    unknown: [1500, 1700],
+    china: [1700, 2000],
+  },
+  {
+    day: '01/04/2022',
+    unitedStates: [0, 500],
+    brazil: [500, 700],
+    japan: [700, 900],
+    unknown: [900, 1500],
+    china: [1500, 3000],
+  },
+  {
+    day: '01/05/2022',
+    unitedStates: [0, 100],
+    brazil: [100, 200],
+    japan: [200, 1000],
+    unknown: [1000, 1300],
+    china: [1300, 6000],
   },
 ];
 

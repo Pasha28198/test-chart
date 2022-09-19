@@ -20,5 +20,8 @@ export const theme = extendTheme({
     gray: {
       100: '#253754',
     },
+    blackAlpha: {
+      500: '#122441',
+    },
   },
 });

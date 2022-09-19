@@ -10,7 +10,7 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import { Container } from './styles';
-import { RechartMock } from '../mock';
+import { RechartLineMock } from '../mock';
 
 import { CustomizedAxisTick } from './components/CustomizedAxisTick';
 import { CustomizedLegend } from './components/CustomizedLegend';
@@ -32,7 +32,7 @@ export const RechartLineChartExample = () => {
     <Container>
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
-          data={RechartMock}
+          data={RechartLineMock}
           margin={{
             bottom: 45,
           }}
