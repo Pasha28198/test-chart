@@ -1,7 +1,7 @@
 import './App.css';
 
 import { ChakraProvider } from '@chakra-ui/react';
-import { RechartExample } from './Charts/Rechart';
+import { RechartLineChartExample } from './Charts/RechartsLineChart/RechartLineChartExample';
 
 import { theme } from './theme';
 
@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <ChakraProvider theme={theme}>
-        <RechartExample />
+        <RechartLineChartExample />
       </ChakraProvider>
     </div>
   );

@@ -1,4 +1,3 @@
-import styled from 'styled-components';
 import { Checkbox, Stack } from '@chakra-ui/react';
 
 export const CustomizedLegend = ({ togleLine }) => {

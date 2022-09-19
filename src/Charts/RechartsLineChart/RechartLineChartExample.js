@@ -10,13 +10,13 @@ import {
   ResponsiveContainer,
 } from 'recharts';
 import { Container } from './styles';
-import { RechartMock } from './mock';
+import { RechartMock } from '../mock';
 
 import { CustomizedAxisTick } from './components/CustomizedAxisTick';
 import { CustomizedLegend } from './components/CustomizedLegend';
 import { CustomizedTooltip } from './components/CustomizedTooltip/CustomizedTooltip';
 
-export const RechartExample = () => {
+export const RechartLineChartExample = () => {
   const [hidenLines, setHidenLines] = useState({
     Other: false,
     Refferences: false,
