@@ -11,7 +11,7 @@ import {
 } from 'recharts';
 import { Container } from './styles';
 import { RechartLineMock } from '../mock';
-
+import { Switch, FormLabel, FormControl } from '@chakra-ui/react';
 import { CustomizedAxisTick } from './components/CustomizedAxisTick';
 import { CustomizedLegend } from './components/CustomizedLegend';
 import { CustomizedTooltip } from './components/CustomizedTooltip/CustomizedTooltip';
@@ -24,12 +24,33 @@ export const RechartLineChartExample = () => {
     Social: false,
     Organic: false,
   });
+  const [showDashedLines, setShowDashedLines] = useState(false);
+
   const togleLine = (lineName) => {
     console.log(lineName);
     setHidenLines({ ...hidenLines, [lineName]: !hidenLines[lineName] });
   };
   return (
     <Container>
+      <FormControl
+        justifyContent="center"
+        height="40px"
+        width={'100%'}
+        display="flex"
+        alignItems="center"
+        position="absolute"
+        left={'0'}
+        top={'250px'}
+      >
+        <FormLabel htmlFor="email-alerts" mb="0">
+          Show dashed lines
+        </FormLabel>
+        <Switch
+          onChange={() => setShowDashedLines(!showDashedLines)}
+          isChecked={showDashedLines}
+          id="email-alerts"
+        />
+      </FormControl>
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
           data={RechartLineMock}
@@ -47,7 +68,7 @@ export const RechartLineChartExample = () => {
               height: '326px',
               marginTop: '-360px',
               marginLeft: '-134px',
-              outline: 'none'
+              outline: 'none',
             }}
             content={<CustomizedTooltip />}
             cursor={false}
@@ -72,6 +93,7 @@ export const RechartLineChartExample = () => {
             type="linear"
             hide={hidenLines.Refferences}
             dataKey="Refferences"
+            strokeDasharray={showDashedLines && '3 3'}
             dot={false}
             strokeWidth={2}
             stroke="#7367F0"
@@ -96,6 +118,7 @@ export const RechartLineChartExample = () => {
             activeDot={{ r: 6 }}
           />
           <Line
+            strokeDasharray={showDashedLines && '3 3'}
             type="linear"
             strokeWidth={2}
             dataKey="Organic"
