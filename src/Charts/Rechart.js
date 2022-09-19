@@ -14,6 +14,7 @@ import { RechartMock } from './mock';
 
 import { CustomizedAxisTick } from './components/CustomizedAxisTick';
 import { CustomizedLegend } from './components/CustomizedLegend';
+import { CustomizedTooltip } from './components/CustomizedTooltip/CustomizedTooltip';
 
 export const RechartExample = () => {
   const [hidenLines, setHidenLines] = useState({
@@ -33,16 +34,24 @@ export const RechartExample = () => {
         <LineChart
           data={RechartMock}
           margin={{
-            top: 5,
-            right: 30,
-            left: 20,
             bottom: 45,
           }}
         >
           <CartesianGrid />
           <XAxis tickLine={false} tick={<CustomizedAxisTick />} interval={10} dataKey="name" />
           <YAxis tickLine={false} tickCount={7} />
-          <Tooltip cursor={false} />
+          <Tooltip
+            allowEscapeViewBox={{ x: true, y: true }}
+            wrapperStyle={{
+              width: '248px',
+              height: '326px',
+              marginTop: '-360px',
+              marginLeft: '-134px',
+              outline: 'none'
+            }}
+            content={<CustomizedTooltip />}
+            cursor={false}
+          />
           <Legend
             content={<CustomizedLegend togleLine={togleLine} />}
             margin={{ bottom: 1000 }}

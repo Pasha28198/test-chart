@@ -1,6 +1,5 @@
 import './App.css';
 
-import { NivoChart } from './Charts/NivoChart';
 import { ChakraProvider } from '@chakra-ui/react';
 import { RechartExample } from './Charts/Rechart';
 
@@ -10,7 +9,6 @@ function App() {
   return (
     <div className="App">
       <ChakraProvider theme={theme}>
-        <NivoChart />
         <RechartExample />
       </ChakraProvider>
     </div>
