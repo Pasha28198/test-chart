@@ -5,7 +5,6 @@ import {
   XAxis,
   YAxis,
   CartesianGrid,
-  Tooltip,
   Area,
   ResponsiveContainer,
   Legend,
@@ -36,16 +35,6 @@ export const RechartAreaChartExample = () => {
           }}
           baseValue={6000}
         >
-          <defs>
-            <linearGradient id="colorUv" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#8884d8" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="#8884d8" stopOpacity={0} />
-            </linearGradient>
-            <linearGradient id="colorPv" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="5%" stopColor="#82ca9d" stopOpacity={0.8} />
-              <stop offset="95%" stopColor="#82ca9d" stopOpacity={0} />
-            </linearGradient>
-          </defs>
           <Legend
             content={<CustomizedLegend togleLine={togleLine} />}
             margin={{ bottom: 1000 }}
@@ -55,7 +44,7 @@ export const RechartAreaChartExample = () => {
           />
           <XAxis tickLine={false} tick={<CustomizedAxisTick />} dataKey="day" />
           <YAxis tickLine={false} tickCount={7} />
-          <CartesianGrid height={1} />
+          <CartesianGrid vertical={false} />
           <Area
             hide={hidenLines.unitedStates}
             activeDot={false}

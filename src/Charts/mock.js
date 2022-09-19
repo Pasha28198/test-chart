@@ -638,6 +638,49 @@ export const RechartAreaMock = [
   },
 ];
 
+export const RechartBarMock = [
+  {
+    day: '01/01/2022',
+    unitedStates: 1900,
+    brazil: 500,
+    japan: 600,
+    unknown: 900,
+    china: 1000,
+  },
+  {
+    day: '01/02/2022',
+    unitedStates: 2100,
+    brazil: 300,
+    japan: 200,
+    unknown: 150,
+    china: 1200,
+  },
+  {
+    day: '01/03/2022',
+    unitedStates: 1200,
+    brazil: 1000,
+    japan: 200,
+    unknown: 200,
+    china: 800,
+  },
+  {
+    day: '01/04/2022',
+    unitedStates: 1100,
+    brazil: 600,
+    japan: 200,
+    unknown: 1200,
+    china: 900,
+  },
+  {
+    day: '01/05/2022',
+    unitedStates: 1500,
+    brazil: 1000,
+    japan: 200,
+    unknown: 400,
+    china: 200,
+  },
+];
+
 // let TestMock = [];
 // const day = 86400000;
 // const today = Date.parse(new Date());
