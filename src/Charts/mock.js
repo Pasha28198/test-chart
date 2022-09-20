@@ -680,7 +680,19 @@ export const RechartBarMock = [
     china: 200,
   },
 ];
-
+export const GoogleAreaChartMock = [
+  ['Country', 'Popularity'],
+  ['United States', 3200],
+  ['Brazil', 2508],
+  ['United Kingdom', 508],
+  ['France', 402],
+  ['Germany', 301],
+  ['Greece', 2508],
+  ['Togo', 508],
+  ['Ivory Coast', 402],
+  ['China', 301],
+  ['India', 3200],
+];
 // let TestMock = [];
 // const day = 86400000;
 // const today = Date.parse(new Date());

@@ -14,6 +14,7 @@ import { RechartLineMock } from '../mock';
 import { CustomizedAxisTick } from './components/CustomizedAxisTick';
 import { CustomizedLegend } from './components/CustomizedLegend';
 import { CustomizedTooltip } from './components/CustomizedTooltip/CustomizedTooltip';
+import { Header } from '../ChartHeader';
 
 export const RechartLineChartExample = () => {
   const [hidenLines, setHidenLines] = useState({
@@ -29,7 +30,11 @@ export const RechartLineChartExample = () => {
   };
   return (
     <Container>
-      <ResponsiveContainer width="100%" height="100%">
+      <Header
+        title="Acquisition by Channel"
+        text="Which channels are most effective in acquiring visitors and when?"
+      />
+      <ResponsiveContainer padding="100" width="100%" height="100%">
         <LineChart
           data={RechartLineMock}
           margin={{
@@ -38,7 +43,7 @@ export const RechartLineChartExample = () => {
         >
           <CartesianGrid />
           <XAxis tickLine={false} tick={<CustomizedAxisTick />} interval={10} dataKey="name" />
-          <YAxis tickLine={false} tickCount={7} />
+          <YAxis tick={{ transform: 'translate(-10)' }} tickLine={false} tickCount={7} />
           <Tooltip
             allowEscapeViewBox={{ x: true, y: true }}
             wrapperStyle={{

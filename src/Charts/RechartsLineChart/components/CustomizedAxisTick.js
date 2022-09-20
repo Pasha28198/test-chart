@@ -12,7 +12,7 @@ export class CustomizedAxisTick extends PureComponent {
           dy={16}
           textAnchor="end"
           fill="#0C1D37"
-          transform="rotate(-30)"
+          transform="rotate(-35)"
         >
           {payload.value}
         </text>

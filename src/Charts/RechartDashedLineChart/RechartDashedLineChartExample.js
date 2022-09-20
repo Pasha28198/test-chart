@@ -14,6 +14,7 @@ import { RechartLineMock } from '../mock';
 import { CustomizedAxisTick } from './components/CustomizedAxisTick';
 import { CustomizedLegend } from './components/CustomizedLegend';
 import { CustomizedTooltip } from './components/CustomizedTooltip/CustomizedTooltip';
+import { Header } from '../ChartHeader';
 
 export const RechartLineDashedChartExample = () => {
   const [hidenLines, setHidenLines] = useState({
@@ -29,6 +30,10 @@ export const RechartLineDashedChartExample = () => {
   };
   return (
     <Container>
+      <Header
+        title="Activation by Wallet Connections"
+        text="How do wallet connections move over time and how do they compare to the previous period"
+      />
       <ResponsiveContainer width="100%" height="100%">
         <LineChart
           data={RechartLineMock}
@@ -38,7 +43,7 @@ export const RechartLineDashedChartExample = () => {
         >
           <CartesianGrid />
           <XAxis tickLine={false} tick={<CustomizedAxisTick />} interval={10} dataKey="name" />
-          <YAxis tickLine={false} tickCount={7} />
+          <YAxis tick={{ transform: 'translate(-10)' }} tickLine={false} tickCount={7} />
           <Tooltip
             allowEscapeViewBox={{ x: true, y: true }}
             wrapperStyle={{

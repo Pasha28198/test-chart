@@ -12,6 +12,7 @@ import {
 import { Container } from './styles';
 import { CustomizedAxisTick } from '../RechartsLineChart/components/CustomizedAxisTick';
 import { CustomizedLegend } from './components/CustomizedLegend';
+import { Header } from '../ChartHeader';
 
 export const RechartAreaChartExample = () => {
   const [hidenLines, setHidenLines] = useState({
@@ -27,6 +28,10 @@ export const RechartAreaChartExample = () => {
   };
   return (
     <Container>
+      <Header
+        title="Activation by Wallet Connections"
+        text="How do wallet connections move over time and how do they compare to the previous period"
+      />
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
           data={RechartAreaMock}
@@ -43,7 +48,7 @@ export const RechartAreaChartExample = () => {
             layout="vertical"
           />
           <XAxis tickLine={false} tick={<CustomizedAxisTick />} dataKey="day" />
-          <YAxis tickLine={false} tickCount={7} />
+          <YAxis tick={{ transform: 'translate(-10)' }} tickLine={false} tickCount={7} />
           <CartesianGrid vertical={false} />
           <Area
             hide={hidenLines.unitedStates}

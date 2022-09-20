@@ -1,11 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 90%;
-  height: 750px;
-  padding-top: 325px;
-  overflow-x: scroll;
-  box-sizing: border-box;
+  width: 100%;
+  height: 375px;
   margin: auto;
-  padding-bottom: 50px;
+  margin-bottom: 200px;
 `;

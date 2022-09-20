@@ -2,7 +2,7 @@ import { Checkbox, Stack } from '@chakra-ui/react';
 
 export const CustomizedLegend = ({ togleLine }) => {
   return (
-    <Stack ml={'25px'} spacing={'20px'} direction="column">
+    <Stack minWidth="200px" ml={'25px'} spacing={'20px'} direction="column">
       <Stack ml={'25px'} spacing={'19px'} direction="column">
         <Checkbox
           onChange={() => togleLine('unitedStates')}
