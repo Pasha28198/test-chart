@@ -12,7 +12,7 @@ import {
 import { Container } from './styles';
 import { CustomizedAxisTick } from '../RechartsLineChart/components/CustomizedAxisTick';
 import { CustomizedLegend } from './components/CustomizedLegend';
-import { Header } from '../ChartHeader';
+import { Header } from '../components/ChartHeader';
 
 export const RechartAreaChartExample = () => {
   const [hidenLines, setHidenLines] = useState({
@@ -36,7 +36,7 @@ export const RechartAreaChartExample = () => {
         <AreaChart
           data={RechartAreaMock}
           margin={{
-            bottom: 45,
+            bottom: 155,
           }}
           baseValue={6000}
         >

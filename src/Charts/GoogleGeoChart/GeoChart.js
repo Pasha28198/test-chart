@@ -3,7 +3,7 @@ import { Container, Flex, Wrapper } from './styles';
 import { Legend } from './components/Legend';
 
 import { GoogleAreaChartMock } from '../mock';
-import { Header } from '../ChartHeader';
+import { Header } from '../components/ChartHeader';
 
 export const options = {
   colorAxis: { colors: ['#80C497', '#00892F'] },

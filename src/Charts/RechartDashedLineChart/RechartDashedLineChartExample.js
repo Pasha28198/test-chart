@@ -14,7 +14,7 @@ import { RechartLineMock } from '../mock';
 import { CustomizedAxisTick } from './components/CustomizedAxisTick';
 import { CustomizedLegend } from './components/CustomizedLegend';
 import { CustomizedTooltip } from './components/CustomizedTooltip/CustomizedTooltip';
-import { Header } from '../ChartHeader';
+import { Header } from '../components/ChartHeader';
 
 export const RechartLineDashedChartExample = () => {
   const [hidenLines, setHidenLines] = useState({
@@ -38,7 +38,7 @@ export const RechartLineDashedChartExample = () => {
         <LineChart
           data={RechartLineMock}
           margin={{
-            bottom: 45,
+            bottom: 150,
           }}
         >
           <CartesianGrid />

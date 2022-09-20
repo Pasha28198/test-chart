@@ -9,7 +9,6 @@ export const Container = styled.div`
   border: 1px solid #d2dae9;
   display: flex;
   justify-content: center;
-  margin-bottom: 200px;
   svg {
     position: absolute;
     top: -28%;
@@ -25,4 +24,6 @@ export const Flex = styled.div`
   gap: 24px;
 `;
 
-export const Wrapper = styled.div``;
+export const Wrapper = styled.div`
+  padding: 0 80px;
+`;

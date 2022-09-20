@@ -4,7 +4,7 @@ import { BarChart, CartesianGrid, XAxis, YAxis, Legend, Bar, ResponsiveContainer
 import { RechartBarMock } from '../mock';
 import { CustomizedAxisTick } from '../../Charts/RechartsLineChart/components/CustomizedAxisTick';
 import { CustomizedLegend } from './Components/CustomizedLegend';
-import { Header } from '../ChartHeader';
+import { Header } from '../components/ChartHeader';
 
 export const RechartBarChartExample = () => {
   const [hidenLines, setHidenLines] = useState({
@@ -27,7 +27,7 @@ export const RechartBarChartExample = () => {
       <ResponsiveContainer width="100%" height="100%">
         <BarChart
           margin={{
-            bottom: 45,
+            bottom: 150,
           }}
           data={RechartBarMock}
         >
