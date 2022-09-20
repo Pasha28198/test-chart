@@ -17,7 +17,7 @@ export const GeoChart = () => {
     <Wrapper>
       <Header
         title="Acquisition by Geography"
-        text="Where in the world are my visitors and when are they acquired?"
+        text="Where in the world are my visitors and which countries visit the most?"
       />
       <Flex>
         <Container>

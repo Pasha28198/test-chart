@@ -29,8 +29,8 @@ export const RechartAreaChartExample = () => {
   return (
     <Container>
       <Header
-        title="Activation by Wallet Connections"
-        text="How do wallet connections move over time and how do they compare to the previous period"
+        title="Acquisition by Geography"
+        text="Where in the world are my visitors and when are they acquired?"
       />
       <ResponsiveContainer width="100%" height="100%">
         <AreaChart
