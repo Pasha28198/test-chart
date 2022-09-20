@@ -15,7 +15,7 @@ import { CustomizedAxisTick } from './components/CustomizedAxisTick';
 import { CustomizedLegend } from './components/CustomizedLegend';
 import { CustomizedTooltip } from './components/CustomizedTooltip/CustomizedTooltip';
 
-export const RechartLineChartExample = () => {
+export const RechartLineDashedChartExample = () => {
   const [hidenLines, setHidenLines] = useState({
     Other: false,
     Refferences: false,
@@ -23,8 +23,8 @@ export const RechartLineChartExample = () => {
     Social: false,
     Organic: false,
   });
+
   const togleLine = (lineName) => {
-    console.log(lineName);
     setHidenLines({ ...hidenLines, [lineName]: !hidenLines[lineName] });
   };
   return (
@@ -71,6 +71,7 @@ export const RechartLineChartExample = () => {
             type="linear"
             hide={hidenLines.Refferences}
             dataKey="Refferences"
+            strokeDasharray={'3 3'}
             dot={false}
             strokeWidth={2}
             stroke="#7367F0"
@@ -95,6 +96,7 @@ export const RechartLineChartExample = () => {
             activeDot={{ r: 6 }}
           />
           <Line
+            strokeDasharray={'3 3'}
             type="linear"
             strokeWidth={2}
             dataKey="Organic"
