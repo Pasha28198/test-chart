@@ -5,7 +5,7 @@ import { RechartLineChartExample } from './Charts/RechartsLineChart/RechartLineC
 import { RechartAreaChartExample } from './Charts/RecahrtsAreaChart/ReachartAreaChartexample';
 import { RechartBarChartExample } from './Charts/RechartsBarChart/RechartBarChartExample';
 import { RechartLineDashedChartExample } from './Charts/RechartDashedLineChart/RechartDashedLineChartExample';
-
+import { GeoChart } from './Charts/GoogleGeoChart/GeoChart';
 import { theme } from './theme';
 
 function App() {
@@ -13,6 +13,7 @@ function App() {
     <div className="App">
       <ChakraProvider theme={theme}>
         <RechartLineChartExample />
+        <GeoChart />
         <RechartAreaChartExample />
         <RechartBarChartExample />
         <RechartLineDashedChartExample />
